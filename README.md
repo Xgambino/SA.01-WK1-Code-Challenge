@@ -54,6 +54,3 @@ Javascript
 ## Support and contact details
 (https://github.com/Xgambino)
 
-### License
-The content of this site is licensed under the XGambino
-Copyright (c) 2024
