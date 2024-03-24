@@ -1,5 +1,7 @@
-function calculateGrade(mark) {
-    if (mark > 79) {
+function overallGrade(mark) {
+    if (mark > 100 || mark < 0) {
+        return 'Invalid Input';
+    } else if (mark > 79) {
         return 'A';
     } else if (mark >= 60 && mark <= 79) {
         return 'B';
@@ -11,16 +13,7 @@ function calculateGrade(mark) {
         return 'E';
     }
 }
-function main() {
-    let input = prompt("Enter student's mark (0-100):");
-    let mark = parseFloat(input);
-    
-    if (!isNaN(mark) && mark >= 0 && mark <= 100) {
-        let grade = calculateGrade(mark);
-        console.log("Grade:", grade);
-    } else {
-        console.log("Invalid input! Mark must be between 0 and 100.");
-    }
-}
-
-main();
+console.log (overallGrade(80))
+console.log (overallGrade(110))
+console.log (overallGrade (39))
+console.log (overallGrade (-1))
